@@ -1,4 +1,4 @@
-# Better than distroless images - scratch images
+# Scratch Images
 
 - Only works if your app compiles to a fully static binary (Go, Rust, C with musl).
   
