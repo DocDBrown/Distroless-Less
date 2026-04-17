@@ -1,7 +1,4 @@
-# Scratch Images
-
-- Only works if your app compiles to a fully static binary (Go, Rust, C with musl).
-  
+# Scratch Images  
 ## Compiled Example 
 
 ```
