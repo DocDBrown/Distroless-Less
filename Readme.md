@@ -50,3 +50,22 @@ WORKDIR /app
 EXPOSE 8088
 ENTRYPOINT ["/app/server"]
 ```
+
+## Explanation
+
+```
+Simple (Go only):
+  scratch
+  ├── /server              ← binary
+  └── /etc/ssl/certs/      ← TLS certs
+
+With React:
+  scratch
+  ├── /app/server           ← same binary
+  ├── /app/static/          ← just files (html, js, css)
+  │   ├── index.html
+  │   ├── assets/
+  │   └── ...
+  ├── /etc/ssl/certs/       ← TLS certs
+  └── /usr/share/zoneinfo/  ← timezone data
+```
